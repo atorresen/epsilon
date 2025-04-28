@@ -63,6 +63,11 @@ a:hover {
 	float: right;
 	position: relative;
 }
+@media screen and (max-width: 480px) {
+	.button {
+		margin: 0 10px;
+	}
+}
 
 #searchbar {
 	font-family: monospace;
@@ -76,6 +81,32 @@ a:hover {
 
 div {
 	margin: 30px 50px;
+}
+@media screen and (max-width: 480px) {
+	div {
+		margin: 10px 20px;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 800px) {
+	/* switch from colums to rows below 800px screen width */
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.imgbox {
+		display: flex;
+		justify-content: center;
+	}
+}
+.box {
+	margin: 0 !important;
+	/* divs within a grid have no margins (spacing comes from the parent div) */
 }
 
 section {
@@ -95,6 +126,12 @@ section {
 	bottom: 0;
 	width: 100%;
 	max-height: 100px;
+}
+
+.carbonbadge {
+	margin: 0;
+	padding: 0;
+	max-height: 60px;
 }
 
 .spacer {
