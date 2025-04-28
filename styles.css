@@ -29,6 +29,7 @@ p {
 
 hr {
 	margin-top: 20px;
+	border: solid 0.8px #bdb;
 }
 
 table, td {
@@ -41,6 +42,11 @@ img {
 
 li {
 	padding: 3px 0 3px 0;
+}
+@media screen and (max-width: 480px) {
+	li {
+		padding-right: 10px;
+	}
 }
 
 a {
