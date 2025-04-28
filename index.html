@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>waste < ε</title>
+			<link rel="icon" href="images/icon.ico">
+			<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<section class="header">
+		<div>
+			<h1>waste < ε</h1>
+					<h2>
+						<a href="about.html" class="button">about</a>
+						<span style="white-space:nowrap">a mathematician</span>
+						<span style="white-space:nowrap">tackles zero waste</span>
+					</h2>
+		</div>
+	</section>
+
+	<section id="content">
+		<div>
+			<h3>topics</h3>
+			<input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="search...">
+			<ul class="topiclist">
+				<li class="title"><a href="pages/taking-a-shower.html"> taking a shower </a></li>
+				<li class="title"><a href="pages/not-all-packaging-is-created-equal.html"> not all packaging is created equal </a></li>
+				<li class="title"><a href="pages/minimal-essentials.html"> minimal essentials </a></li>
+				<li class="title"><a href="pages/yes.html"> can we really stop global warming? </a></li>
+				<li class="title"><a href="#"> the impact of inconvenience </a></li>
+				<li class="title"><a href="pages/upstream-insight.html"> the upstream insight </a></li>
+			</ul>
+		</div>
+		<div class="spacer"></div>
+	</section>
+
+	<section class="footer">
+		<div>
+			<div id="wcb" class="carbonbadge"></div>
+			<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+		</div>
+	</section>
+
+	<script src="search.js"></script>
+</body>
+
+</html>
