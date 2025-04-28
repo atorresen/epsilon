@@ -45,7 +45,12 @@ content.appendChild(spacer);
 
 const footer = document.createElement("section");
 footer.className = "footer";
-footer.insertAdjacentHTML("afterbegin",
-	"<div></div>"
-)
+const badgediv = document.createElement("div");
+badgediv.className = "carbonbadge";
+badgediv.id = "wcb";
+const badgescript = document.createElement("script");
+badgescript.src = "https://unpkg.com/website-carbon-badges@1.1.3/b.min.js";
+badgescript.defer = true;
+footer.appendChild(badgediv);
+footer.appendChild(badgescript);
 content.insertAdjacentElement("afterend", footer);
