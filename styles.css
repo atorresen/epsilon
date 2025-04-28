@@ -83,6 +83,27 @@ div {
 	}
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 800px) {
+	/* switch from colums to rows below 800px screen width */
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.imgbox {
+		display: flex;
+		justify-content: center;
+	}
+}
+.box {
+	margin: 0 !important;
+	/* divs within a grid have no margins (spacing comes from the parent div) */
+}
+
 section {
 	padding: 1px;
 }
