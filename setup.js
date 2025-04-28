@@ -5,8 +5,10 @@ document.body.insertAdjacentElement("afterbegin", header);
 const titlediv = document.createElement("div");
 header.appendChild(titlediv);
 
+var homepageQ = ((document.body.id) == "home");
+
 var filename = location.href.split("/").slice(-1)[0];
-if (filename.includes("index") || filename.includes("about")) {
+if (homepageQ || filename.includes("about")) {
 	const maintitle = document.createElement("h1");
 	maintitle.innerText = "waste < ε";
 	titlediv.appendChild(maintitle);
@@ -19,7 +21,7 @@ if (filename.includes("index") || filename.includes("about")) {
 };
 
 const button = document.createElement("a");
-if (filename.includes("index")) {
+if (homepageQ) {
 	var buttoninfo = ["about", "about.html"];
 } else {
 	var buttoninfo = ["home", up + "index.html"];
