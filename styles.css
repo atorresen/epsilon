@@ -55,9 +55,11 @@ a:hover {
 .button {
 	background-color: #222;
 	color: #dbd;
-	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
 	margin: 0 20px;
 	padding: 3px;
+	display: inline-block;
 	float: right;
 	position: relative;
 }
