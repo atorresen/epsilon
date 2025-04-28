@@ -63,6 +63,11 @@ a:hover {
 	float: right;
 	position: relative;
 }
+@media screen and (max-width: 480px) {
+	.button {
+		margin: 0 10px;
+	}
+}
 
 #searchbar {
 	font-family: monospace;
