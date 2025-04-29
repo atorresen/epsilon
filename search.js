@@ -4,15 +4,19 @@ function keywords(title) {
 	switch(title) {
 		case "taking a shower":
 			kws = "bar soap shampoo bar conditioner bar";
-			cats = "personal, home"
+			cats = "personal, home";
 			break;
 		case "minimal essentials":
 			kws = "to go kit spork necessary minimal set messy";
-			cats = "getting started, personal"
+			cats = "getting started, personal";
 			break;
+		case "good things happen when you compost":
+				kws = "food waste food scraps vermicompost decompose";
+				cats = "food, home, getting started";
+				break;
 		case "the upstream impact":
-			kws = "test"
-			cats = "theory, getting started"
+			kws = "test";
+			cats = "theory, getting started";
 			break;
 	};
 	return(title + " " + kws + " " + cats)
