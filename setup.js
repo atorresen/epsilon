@@ -15,8 +15,7 @@ if (homepageQ || filename.includes("about")) {
 	titletext = "<span style='white-space:nowrap'>a mathematician</span> <span style='white-space:nowrap'>approaches zero waste</span>";
 	var up = "";
 } else {
-	// file names are the desired post title with "-" for spaces and ？for ?
-	titletext = (filename.split(".html")[0]).replaceAll("-", " ").replaceAll("%EF%BC%9F", "?");
+	titletext = titleFromFilename(filename);
 	var up = "../";
 };
 
@@ -35,8 +34,26 @@ const title = document.createElement("h2");
 title.innerHTML = titletext;
 titlediv.appendChild(title);
 
+//post titles on homepage
+if (homepageQ) {
+	const posts = document.getElementsByClassName("title");
+	for (var p of posts) {
+		var filename = p.href;
+		p.innerText = titleFromFilename(filename)
+	}
+};
 
-//date & footer
+function titleFromFilename(filename) {
+	// file names are the desired post title with "-" for spaces and ？for ?
+	var res = filename.split(".html")[0];
+	res = res.split("pages/").slice(-1)[0];
+	res = res.replaceAll("-", " ");
+	res = res.replaceAll("%EF%BC%9F", "?");
+
+	return(res)
+}
+
+//date and footer
 const content = document.getElementById("content");
 
 const spacer = document.createElement("div");
