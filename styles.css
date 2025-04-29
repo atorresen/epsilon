@@ -25,6 +25,9 @@ p {
 	line-height: 1.2;
 	max-width: 800px;
 }
+.dp {
+	color: #222;
+}
 
 hr {
 	margin-top: 20px;
@@ -41,6 +44,7 @@ img {
 
 li {
 	padding: 3px 0 3px 0;
+	color: #222;
 }
 @media screen and (max-width: 480px) {
 	li {
