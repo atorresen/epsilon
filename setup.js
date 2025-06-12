@@ -57,3 +57,9 @@ badgescript.defer = true;
 footer.appendChild(badgediv);
 footer.appendChild(badgescript);
 content.insertAdjacentElement("afterend", footer);
+
+// logo
+const logo = document.createElement("a");
+logo.href = up + "index.html";
+logo.innerHTML = "<img class='logo' src='" + up + "images/icon.ico'>";
+footer.insertAdjacentElement("afterbegin", logo);

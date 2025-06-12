@@ -150,3 +150,16 @@ section {
 	height: 100px;
 	color: lavender;
 }
+
+.logo {
+	margin: 10px 70px;
+	width: 70px;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+@media screen and (max-width: 480px) {
+	.logo {
+		margin: 10px 30px;
+	}
+}
