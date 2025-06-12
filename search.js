@@ -58,11 +58,15 @@ function keywords(t) {
 				break;
 		case "decolonizing convenience":
 			kws = "alice plane huma gupta activating change inconvenience colonial lead";
-			cats = "theory personal";
+			cats = "theory, personal, poem";
 			break;
 		case "the upstream impact":
 			kws = "test";
 			cats = "theory, getting started";
+			break;
+		case "normative inequalities":
+			kws = "> < = inequality";
+			cats = "theory, personal, poem";
 			break;
 	};
 	return(title + " " + kws + " " + cats)
