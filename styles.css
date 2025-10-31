@@ -121,6 +121,14 @@ div {
 	/* divs within a grid have no margins (spacing comes from the parent div) */
 }
 
+@media screen and (max-width: 550px) {
+	/* to introduce line breaks on large screen */
+	.full-width-breakpoint {
+		display: none;
+		line-height: 0;
+	}
+}
+
 section {
 	padding: 1px;
 }
