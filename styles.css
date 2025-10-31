@@ -122,7 +122,7 @@ div {
 }
 
 @media screen and (max-width: 550px) {
-	/* to introduce line breaks on large screen */
+	/* to introduce line breaks on large screen only */
 	.full-width-breakpoint {
 		display: none;
 		line-height: 0;
