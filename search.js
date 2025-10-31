@@ -42,7 +42,7 @@ function keywords(t) {
 	var title = t.innerHTML;
 	title = titleFromFilename(title);
 	var kws = "";
-	var cats = ""; //personal, home, food, theory, policy, getting started, etc. (TBD)
+	var cats = ""; //personal, home, food, theory, policy, getting started, consumerism, etc. (TBD)
 	switch(title) {
 		case "taking a shower":
 			kws = "bar soap shampoo bar conditioner bar";
@@ -58,7 +58,7 @@ function keywords(t) {
 				break;
 		case "decolonizing convenience":
 			kws = "alice plane huma gupta activating change inconvenience colonial lead";
-			cats = "theory, personal, poem";
+			cats = "theory, personal, poem, consumerism";
 			break;
 		case "the upstream impact":
 			kws = "test";
@@ -67,6 +67,10 @@ function keywords(t) {
 		case "normative inequalities":
 			kws = "> < = inequality";
 			cats = "theory, personal, poem";
+			break;
+		case "spooked":
+			kws = "halloween decoration";
+			cats = "home, consumerism";
 			break;
 	};
 	return(title + " " + kws + " " + cats)
