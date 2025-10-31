@@ -72,6 +72,10 @@ function keywords(t) {
 			kws = "halloween decoration";
 			cats = "home, consumerism";
 			break;
+		case "trivial":
+			kws = "obvious basic beginner";
+			cats = "home, getting started";
+			break;
 	};
 	return(title + " " + kws + " " + cats)
 };
