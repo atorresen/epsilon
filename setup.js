@@ -17,7 +17,8 @@ if (homepageQ || filename.includes("about")) {
 	titletext = "<span style='white-space:nowrap'>a mathematician</span> <span style='white-space:nowrap'>approaches zero waste</span>";
 	var up = "";
 } else {
-	titletext = filename.split(".html")[0].replaceAll("-", " ").replaceAll().replaceAll("%EF%BC%9F", "?");
+	titletext = filename.split(".html")[0].replaceAll("-", " ");
+	titletext = titletext.replaceAll("%EF%BC%9F", "?").replaceAll("%E2%80%91", "-");
 	var up = "../";
 };
 

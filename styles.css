@@ -97,6 +97,11 @@ div {
 	}
 }
 
+blockquote {
+	max-width: 900px;
+	color: #c8c;
+}
+
 .grid {
 	align-items: center;
 	display: grid;
