@@ -37,7 +37,23 @@ hr {
 table, td {
 	vertical-align: top;
 	max-width: 800px;
+	border-collapse: collapse;
 }
+
+.outlinetd {
+	border: solid 1px #888;
+	border-collapse: collapse;
+	padding: 10px;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	align-content: center;
+}
+.centertd {
+	text-align: center;
+	align-content: center;
+}
+
 img {
 	max-width: 800px;
 }

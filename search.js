@@ -76,6 +76,10 @@ function keywords(t) {
 			kws = "obvious basic beginner";
 			cats = "home, getting started";
 			break;
+		case "the plastic game":
+			kws = "game theory equilibrium cooperative cooperation clothes microplastic plastic synthetic fabric second hand secondhand thrift production new";
+			cats = "theory, consumerism";
+			break;
 	};
 	return(title + " " + kws + " " + cats)
 };
