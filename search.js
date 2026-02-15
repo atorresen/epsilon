@@ -76,8 +76,12 @@ function keywords(t) {
 			kws = "obvious basic beginner";
 			cats = "home, getting started";
 			break;
+		case "anti‑capitalist finance":
+			kws = "money coorporation spend spending business cost money";
+			cats = "theory, getting started, consumerism";
+			break;
 		case "the plastic game":
-			kws = "game theory equilibrium cooperative cooperation clothes microplastic plastic synthetic fabric second hand secondhand thrift production new";
+			kws = "theory equilibrium cooperative cooperation clothes microplastic synthetic fabric second hand secondhand thrift production new";
 			cats = "theory, consumerism";
 			break;
 	};
