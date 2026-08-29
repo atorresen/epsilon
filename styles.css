@@ -118,38 +118,6 @@ blockquote {
 	color: #c8c;
 }
 
-.grid {
-	align-items: center;
-	display: grid;
-	grid-gap: 15px;
-	grid-template-columns: 1fr 1fr;
-	margin: 0;
-	padding: 0;
-}
-@media screen and (max-width: 800px) {
-	/* switch from colums to rows below 800px screen width */
-	.grid {
-		grid-gap: 0;
-		grid-template-columns: 1fr;
-	}
-	.imgbox {
-		display: flex;
-		justify-content: center;
-	}
-}
-.box {
-	margin: 0 !important;
-	/* divs within a grid have no margins (spacing comes from the parent div) */
-}
-
-@media screen and (max-width: 550px) {
-	/* to introduce line breaks on large screen only */
-	.full-width-breakpoint {
-		display: none;
-		line-height: 0;
-	}
-}
-
 section {
 	padding: 1px;
 }
